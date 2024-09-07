@@ -1,761 +1,105 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>個人サイト向けシンプル無料ホームページテンプレート tp_simple7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ここにサイト説明を入れます">
+    <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/openclose.js"></script>
+    <script src="js/fixmenu_pagetop.js"></script>
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-  <body id="top"><doctype html="">
-      <!-- ※基本共通設定 -->
-      <title>fygar256's home page</title>
-      <!-- Google tag (gtag.js) -->
-      <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HNYQ39LYLX"></script>
-      <script>
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-
-           gtag('config', 'G-HNYQ39LYLX');
-      </script>
-      <!--  Facebook用設定 -->
-      <meta property="fb:admins" content="442967339163951">
-      <!-- ※ Twitter共通設定 -->
-      <meta name="twitter:card" content="summary">
-      <meta name="description" content="*****************Hello,World!*****************">
-      <meta name="keywords" content="">
-      <link rel="icon" href="favicon.ico">
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-      <!-- アイコンフォントの利用方法 http://fortawesome.github.io/Font-Awesome/ -->
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <style>
-			body {
-				background: #fff;
-				color: #444;
-				font-size: 16px;
-				font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ＭＳ Ｐゴシック', sans-serif;
-				line-height: 1.42857;
-			}
-
-			a:link {
-				color: #04c;
-				text-decoration: none;
-			}
-
-			a:hover {
-				color: #f00;
-				text-decoration: none;
-			}
-
-			a:visited {
-				color: #999;
-				text-decoration: none;
-			}
-
-			/* ヘッダー */
-			.header {
-				z-index: 100;
-				padding: 24px 0;
-				width: 100%;
-				border-bottom: #ccd1d9 solid 1px;
-				background-color: #fff;
-				color: #333;
-				text-align: center;
-			}
-
-			.header-title {
-				margin: 0;
-				font-size: 2.4em;
-			}
-
-			.header-description {
-				color: #999;
-			}
-
-			/* ナビゲーション */
-			.nav {
-				z-index: 100;
-				padding: 12px 0;
-				width: 100%;
-				background-color: #ffffff;
-				text-align: center;
-			}
-
-			.nav-group {
-				margin: 0;
-				padding: 0;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.nav-group>li {
-				margin: 0;
-				padding: 0 12px;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.nav-group>li a {
-				display: block;
-				padding: 6px 12px;
-				color: #333;
-				text-decoration: none;
-			}
-
-			.nav-group>li a:hover {
-				color: #999;
-			}
-
-			.nav-group>li a.active {
-				border-bottom: #333 solid 2px;
-				color: #999;
-			}
-
-			/* メインイメージ */
-			.main {
-				padding: 144px 0;
-				width: 100%;
-				background: #ea5866;
-				background-image: linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
-				color: #fff;
-				text-align: center;
-				font-weight: bold;
-				font-size: 3em;
-			}
-
-			/* コンテンツ */
-			.content {
-				padding: 48px 0 24px;
-				*zoom: 1;
-			}
-
-			.article {
-				margin: 0 auto 48px;
-				padding-bottom: 48px;
-				width: 960px;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				*zoom: 1;
-			}
-
-			.content:after,
-			.article:after,
-			.article-paragraph:after {
-				display: block;
-				clear: both;
-				content: '';
-			}
-
-			.article-title {
-				padding-bottom: 6px;
-				border-bottom: #333 solid 1px;
-			}
-
-			.article-title,
-			.article-paragraph-title {
-				clear: both;
-				margin: 0 0 24px;
-			}
-
-			.article-date {
-				margin: 0 0 6px;
-				color: #999;
-				font-size: 0.9em;
-			}
-
-			.article-paragraph {
-				margin: 0 0 24px;
-				line-height: 1.7;
-				*zoom: 1;
-			}
-
-			.article-list {
-				margin: 0;
-				padding: 0;
-				list-style-type: none;
-			}
-
-			.article-list>li {
-				padding: 12px 0;
-				border-bottom: #ddd dotted 1px;
-			}
-
-			.article-list>li:last-child {
-				border-bottom: none;
-			}
-
-			.article-list-date {
-				padding-right: 12px;
-				color: #999;
-			}
-
-			img.article-img {
-				display: block;
-				margin: 0 0 12px;
-			}
-
-			img.article-img_left {
-				float: left;
-				margin: 0 24px 0 0;
-			}
-
-			img.article-img_right {
-				float: right;
-				margin: 0 0 0 24px;
-			}
-
-			.article-paragraph:last-child,
-			.article-img:last-child {
-				margin: 0;
-			}
-
-			.address {
-				padding: 24px 0 24px 0;
-				border-top: #ccd1d9 solid 1px;
-				background: #fff;
-				text-align: center;
-			}
-
-			.address-body {
-				color: #666;
-				text-align: left;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.address-body-name {
-				display: block;
-				margin-bottom: 12px;
-				font-size: 1.2em;
-			}
-
-			.address-body-addressline {
-				display: block;
-				margin-bottom: 6px;
-			}
-
-			.address-body-tel {
-				display: block;
-				font-size: 1.1em;
-			}
-
-			a.btn-pagetop {
-				position: fixed;
-				right: 48px;
-				bottom: 36px;
-				width: 72px;
-				height: 72px;
-				border: #ccd1d9 solid 1px;
-				background: #fff;
-				color: #aab2bd;
-				text-align: center;
-				font-size: 3em;
-				vertical-align: baseline;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-				-webkit-border-radius: 50%;
-				-moz-border-radius: 50%;
-				-ms-border-radius: 50%;
-				-o-border-radius: 50%;
-				border-radius: 50%;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-
-			/* フッター */
-			.footer {
-				padding: 12px 0;
-				border-top: #ccd1d9 solid 1px;
-				background: #fff;
-				text-align: center;
-			}
-
-			.footer-nav {
-				margin-bottom: 12px;
-				width: 100%;
-				text-align: center;
-			}
-
-			.footer-nav-group {
-				margin: 0;
-				padding: 0;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.footer-nav-group>li {
-				margin: 0;
-				padding: 0 6px;
-				font-size: 0.9em;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.footer-nav-group>li a {
-				color: #666;
-				text-decoration: none;
-			}
-
-			.footer-nav-group>li a:hover {
-				color: #999;
-			}
-
-			.footer-text {
-				margin-bottom: 6px;
-				color: #999;
-				font-size: 0.8em;
-			}
-
-			.footer-copyright {
-				color: #999;
-				font-size: 0.8em;
-			}
-
-			/* パーツ */
-			.btn {
-				margin: 6px;
-				padding: 12px 24px;
-				border: #aab2bd solid 1px;
-				background: #aab2bd;
-				color: #fff;
-				vertical-align: baseline;
-				text-align: center;
-				white-space: nowrap;
-				font-size: 1em;
-				line-height: 1;
-				cursor: pointer;
-				-webkit-border-radius: 6px;
-				-moz-border-radius: 6px;
-				-ms-border-radius: 6px;
-				-o-border-radius: 6px;
-				border-radius: 6px;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.btn_lg {
-				padding: 18px 36px;
-			}
-
-			.btn_sm {
-				padding: 6px 12px;
-				font-size: 0.8em;
-			}
-
-			a.btn:link,
-			a.btn:active,
-			a.btn:focus,
-			a.btn:hover,
-			a.btn:visited {
-				color: #fff;
-				text-decoration: none;
-			}
-
-			a.btn_default:link,
-			a.btn_default:active,
-			a.btn_default:focus,
-			a.btn_default:hover,
-			a.btn_default:visited {
-				color: #656d78;
-				text-decoration: none;
-			}
-
-			.btn_normal {
-				border: #aab2bd solid 1px;
-				background: #aab2bd;
-			}
-
-			.btn_default {
-				border: #ccd1d9 solid 1px;
-				background: #f5f7fa;
-			}
-
-			.btn_primary {
-				border: #4a89dc solid 1px;
-				background: #4a89dc;
-			}
-
-			.btn_success {
-				border: #8cc152 solid 1px;
-				background: #8cc152;
-			}
-
-			.btn_warning {
-				border: #f6bb42 solid 1px;
-				background: #f6bb42;
-			}
-
-			.btn_danger {
-				border: #da4453 solid 1px;
-				background: #da4453;
-			}
-
-			.btn_normal:hover {
-				border: #ccd1d9 solid 1px;
-				background: #ccd1d9;
-			}
-
-			.btn_default:hover {
-				border: #aab2bd solid 1px;
-				background: #e6e9ed;
-			}
-
-			.btn_primary:hover {
-				border: #5d9cec solid 1px;
-				background: #5d9cec;
-			}
-
-			.btn_success:hover {
-				border: #a0d468 solid 1px;
-				background: #a0d468;
-			}
-
-			.btn_warning:hover {
-				border: #ffce54 solid 1px;
-				background: #ffce54;
-			}
-
-			.btn_danger:hover {
-				border: #ed5565 solid 1px;
-				background: #ed5565;
-			}
-
-			.img-rounded,
-			.img-circle,
-			.img-thumbnail {
-				margin: 6px;
-			}
-
-			.img-rounded {
-				-webkit-border-radius: 6px;
-				-moz-border-radius: 6px;
-				-ms-border-radius: 6px;
-				-o-border-radius: 6px;
-				border-radius: 6px;
-			}
-
-			.img-circle {
-				-webkit-border-radius: 50%;
-				-moz-border-radius: 50%;
-				-ms-border-radius: 50%;
-				-o-border-radius: 50%;
-				border-radius: 50%;
-			}
-
-			.img-thumbnail {
-				padding: 3px;
-				border: #ccd1d9 solid 1px;
-				vertical-align: baseline;
-				line-height: 1;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-				-webkit-border-radius: 6px;
-				-moz-border-radius: 6px;
-				-ms-border-radius: 6px;
-				-o-border-radius: 6px;
-				border-radius: 6px;
-			}
-
-			.label {
-				margin: 0 12px;
-				padding: 3px 6px;
-				border: #656d78 solid 1px;
-				background: #656d78;
-				color: #fff;
-				vertical-align: baseline;
-				text-align: center;
-				white-space: nowrap;
-				font-size: 0.6em;
-				line-height: 1;
-				-webkit-border-radius: 3px;
-				-moz-border-radius: 3px;
-				-ms-border-radius: 3px;
-				-o-border-radius: 3px;
-				border-radius: 3px;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.label_normal {
-				border: #656d78 solid 1px;
-				background: #656d78;
-			}
-
-			.label_primary {
-				border: #5d9cec solid 1px;
-				background: #5d9cec;
-			}
-
-			.label_success {
-				border: #a0d468 solid 1px;
-				background: #a0d468;
-			}
-
-			.label_warning {
-				border: #ffce54 solid 1px;
-				background: #ffce54;
-			}
-
-			.label_danger {
-				border: #ed5565 solid 1px;
-				background: #ed5565;
-			}
-
-			.text_normal {
-				color: #656d78;
-			}
-
-			.text_primary {
-				color: #4a89dc;
-			}
-
-			.text_success {
-				color: #8cc152;
-			}
-
-			.text_warning {
-				color: #f6bb42;
-			}
-
-			.text_danger {
-				color: #da4453;
-			}
-
-			.message {
-				margin-bottom: 12px;
-				padding: 12px 24px;
-				border: #656d78 solid 1px;
-				background: #656d78;
-				color: #fff;
-				vertical-align: baseline;
-				line-height: 1;
-				-webkit-border-radius: 3px;
-				-moz-border-radius: 3px;
-				-ms-border-radius: 3px;
-				-o-border-radius: 3px;
-				border-radius: 3px;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.message_normal {
-				border: #656d78 solid 1px;
-				background: #656d78;
-			}
-
-			.message_default {
-				border: #ccd1d9 solid 1px;
-				background: #f5f7fa;
-				color: #656d78;
-			}
-
-			.message_primary {
-				border: #4a89dc solid 1px;
-				background: #4a89dc;
-			}
-
-			.message_success {
-				border: #8cc152 solid 1px;
-				background: #8cc152;
-			}
-
-			.message_warning {
-				border: #f6bb42 solid 1px;
-				background: #f6bb42;
-			}
-
-			.message_danger {
-				border: #da4453 solid 1px;
-				background: #da4453;
-			}
-
-			.panel {
-				margin-bottom: 24px;
-				width: 100%;
-				border: #ccd1d9 solid 1px;
-				background: #fff;
-				-webkit-border-radius: 6px;
-				-moz-border-radius: 6px;
-				-ms-border-radius: 6px;
-				-o-border-radius: 6px;
-				border-radius: 6px;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				display: -moz-inline-stack;
-				display: inline-block;
-				vertical-align: middle;
-				*vertical-align: auto;
-				zoom: 1;
-				*display: inline;
-			}
-
-			.panel-header {
-				padding: 12px 24px;
-				border-bottom: #ccd1d9 solid 1px;
-				background: #f5f7fa;
-				font-size: 0.9em;
-				-webkit-border-radius: 6px 6px 0 0;
-				-moz-border-radius: 6px 6px 0 0;
-				-ms-border-radius: 6px 6px 0 0;
-				-o-border-radius: 6px 6px 0 0;
-				border-radius: 6px 6px 0 0;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-
-			.panel-body {
-				padding: 12px 24px;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-		</style>
-      <script>
-			// 画面上部にスクロールするボタン
-			$(function () {
-				var pageTop = $('.btn-pagetop');
-				pageTop.hide();
-				$(window).scroll(function () {
-					if ($(this).scrollTop() > 600) {
-						pageTop.fadeIn();
-					} else {
-						pageTop.fadeOut();
-					}
-				});
-				pageTop.click(function () {
-					$('body, html').animate({
-						scrollTop: 0
-					}, 500, 'swing');
-					pageTop.blur();
-					return false;
-				});
-			});
-		</script>
-      <div class="header"> <b>Taisuke Maekawa(前川田井介)'s cat showoff homepage. </b>
-        <p class="header-description">hello.</p>
-      </div>
-      <div class="nav">
-        <ul class="nav-group
-          <li><img src="IMG111.JPG" alt-""="" style="width: 121px; height: 91px;"></li>
-	  <li><img src="C5.png"></li>
-          <li><img src="p.jpg" alt-""="" style="width: 90px; height: 90px;"></li>
-          <li><img src="eriko.jpg" alt-""="" style="width: 90px; height: 90px;"></li>
-          <br>
-          <li><a href="https://phigar256.hatenablog.jp" target="_blank" class="btn btn_lg btn_primary" style="width: 200px,height: 100px">blog</a></li>
-          <li><br>
-          </li>
-          <li><a href="http://fygar256.blog.shinobi.jp/" target="_blank" class="btn btn_lg btn_primary">Funny</a></li>
-          <li><a href="https://www.youtube.com/channel/UCeDVNgNayXvoE2S-TX-vxkw"
-              target="_blank" class="btn btn_lg btn_primary">Youtube<br>
-              My Channel</a></li>
-          <li><a href="https://www.facebook.com/taisuke.maekawa.16" target="_blank"
-              class="btn btn_lg btn_primary">My<br>
-              Facebook</a></li>
-          <li><a href="https://twitter.com/FelisCatusFygar" target="_blank" class="btn btn_lg btn_primary">My<br>
-              twitter</a></li>
-          <li><a href="https://github.com/fygar256/psk_act" target="_blank" class="btn btn_lg btn_primary">PSK
-              games<br>
-              GALACK Pack'n Boy StarStruck<br>
-              Internal Trouble </a></li>
-          <li><a href="https://github.com/fygar256/game_language_interpreter_gamec"
-              target="_blank" class="btn btn_lg btn_primary">GAME Language<br>
-              interpreter</a></li>
-          <li><a href="https://github.com/fygar256/game_language_compiler_miep2"
-              target="_blank" class="btn btn_lg btn_primary">GAME Language<br>
-              compiler</a></li>
-          <li><a href="https://www.amazon.co.jp/dp/B0CN57DTWS/?coliid=I24MD7X46U68RX&amp;colid=1BAGO6ED4JFBB&amp;psc=1&amp;ref_=list_c_wl_lv_ov_lig_dp_it"
-              target="_blank" class="btn btn_lg btn_primary">book<br>
-              句集「猫に 餌第２版」</a></li>
-          <li><a href="https://www.amazon.co.jp/dp/B0DBY8X1WG/" target="_blank"
-              class="btn btn_lg btn_primary">book<br>
-              「カルカン　PDSプログラム集」<br>
-            </a></li>
-          <li><a href="https://github.com/fygar256" target="_blank" class="btn btn_lg btn_primary">My<br>
-              GitHub</a></li>
-          <li><a href="https://qiita.com/fygar256" target="_blank" class="btn btn_lg btn_primary">My<br>
-              Qiita</a> </li>
-          <li><a href="https://www.flickr.com/people/142530355@N07/?" target="_blank"
-              class="btn btn_lg btn_primary">My<br>
-              flickr</a></li>
-          <li><a href="https://www.pixiv.net/member.php?id=10691681" target="_blank"
-              class="btn btn_lg btn_primary"> My <br>
-              pixiv </a></li>
-          <li><span style="color: white;"></span><br>
-          </li>
-          <li><a href="./pikojiman.jpg" target="_blank"
-              class="btn btn_lg btn_primary"> pico classification</a><br>
-          </li>
-          <li><a href="https://fygar256.hatenadiary.jp/entry/2023/11/28/061449"
-              target="_blank" class="btn btn_lg btn_primary">how to keep stray
-              cat</a><br>
-          </li>
-          <br>
-          <li><a href="mailto:fygar256@gmail.com" target="_blank" class="btn btn_lg btn_primary">mail<br>
-            </a></li>
-          <li><a href="https://www.opendesktop.org/u/fygar256/" target="_blank"
-              class="btn btn_lg btn_primary"> My <br>
-              Opendesktop </a></li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="article">
-          <div class="article-date">&nbsp;</div>
+  <body>
+    <div id="container">
+      <div id="contents">
+        <div id="main">
+          <section id="new">
+            <h2>Contents</h2>
+            <dl>
+              <dt>hatena</dt>
+              <dd><a href="https://phigar256.hatenablog.jp">Blog</dd>
+              <dt>shinobi</dt>
+              <dd><a href="http://fygar256.blog.shinobi.jp/">Jokes</dd>
+              <dt>youtube</dt>
+              <dd><a href="https://www.youtube.com/channel/UCeDVNgNayXvoE2S-TX-vxkw>My channel</dd>
+              <dt>20XX/00/00</dt>
+              <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+              <dt>20XX/00/00</dt>
+              <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+              <dt>20XX/00/00</dt>
+              <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+              <dt>20XX/00/00</dt>
+              <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+              <dt>20XX/00/00</dt>
+              <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+              <dt>20XX/00/00</dt>
+              <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+            </dl>
+            <p class="r">»&nbsp;<a href="#">過去ログ</a></p>
+          </section>
+          <section>
+            <h2>テンプレートのご利用前に必ずお読み下さい</h2>
+            <h3>利用規約のご案内</h3>
+            <p>このテンプレートは、<a href="https://template-party.com/">Template Party</a>に
+              て無料配布している『個人サイト向けシンプル無料ホームページテンプレート tp_simple7』です。必ずダウンロード先のサイトの<a
+                href="https://template-party.com/read.html">利用規約</a>をご一読の上でご利用下さ
+              い。</p>
+            <p><strong class="color1">■HP最下部の著作表示『Web
+                Design:Template-Party』は無断で削除しないで下さい。</strong><br>
+              わざと見えなく加工する事も禁止です。</p>
+            <p><strong class="color1">■下部の著作を外したい場合は</strong><br>
+              <a href="https://template-party.com/">Template-Party</a>の<a href="https://template-party.com/member.html">ラ
+                イセンス契約</a>を行う事でHP下部の著作を外す事ができます。</p>
+            <h3>テンプレートに梱包されているjavascriptファイル（jsファイル）について</h3>
+            <p>当テンプレートに梱包されている、fixmenu_pagetop.js、openclose.jsは、<a href="https://www.crytus.info/"
+                target="_blank">クリタス様</a>提供のものです。これらのファイルは改変せずにご利用下さい。<br>
+              また、当サイトのテンプレート「以外」に使いたいなど、「プログラムのみ」を使う場合は<a href="https://template-party.com/free_program/openclose_license.html">こ
+                ちらの規約</a>をお守り下さい。</p>
+            <h3>当テンプレートの詳しい使い方は</h3>
+            <p><a href="about.html">こちらをご覧下さい。</a></p>
+          </section>
+        </div>
+        <!--/#main-->
+        <div id="sub">
+          <!--PC用（801px以上端末）メニュー-->
+          <nav id="menubar">
+            <h2>Contents</h2>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="link.html">LINK</a></li>
+            </ul>
+          </nav>
+          <p><a href="#"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a></p>
         </div>
       </div>
-      <p></p>
-    </doctype>
+    </div>
+    <footer><small>Copyright© <a href="index.html">SAMPLE WEB SITE</a> All
+        Rights Reserved.</small> <span class="pr"><a href="http://template-party.com/"
+          target="_blank">《Web Design:Template-Party》</a></span> </footer>
+    <!--小さな端末用（800px以下端末）メニュー-->
+    <nav id="menubar-s">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="link.html">LINK</a></li>
+      </ul>
+    </nav>
+    <!--ページの上部に戻る「↑」ボタン-->
+    <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+    <!--メニュー開閉ボタン-->
+    <div id="menubar_hdr" class="close"></div>
+    <!--メニューの開閉処理条件設定　800px以下-->
+    <script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
   </body>
 </html>
